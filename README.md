@@ -7,7 +7,7 @@ pythonのマイクロフレームワークbottleのMVCサンプルです
 
 techレポート用です。
 
-* http://amewiki.cadc.cyberagent.local/display/techReport/Home
+* http://amewiki.cadc.cyberagent.local/pages/viewpage.action?pageId=12684648
 
 ## Pythonバージョン
 
@@ -35,16 +35,16 @@ gunicornで複数workerを立ち上げて、それをsupervisorでプロセス�
 # ディレクトリ構成
 
 * `/`
-    * `app`
-        * `controllers` ... コントローラー
-        * `models` ... モデル
+    * `app/`
+        * `controllers/` ... コントローラー
+        * `models/` ... モデル
     * `config/` ... 設定ファイル
     * `libs/` ... ライブラリ
     * `sql/` ... SQLファイル
     * `stat/` ... 静的ファイル
         * `css/` ... CSS
     * `views/` ... HTMLテンプレート
-        * `inc` ... 共通テンプレート
+        * `inc/` ... 共通テンプレート
     * `index.py` ... dispatcher
 
 
