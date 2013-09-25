@@ -1,0 +1,40 @@
+{% include "inc/header" %}
+
+	<div class="menu">
+		<a href="/new"><button class="pure-button pure-button-primary pure-button-small">新しいまんがを登録する</button></a>
+	</div>
+
+	<div class="box">
+		<table class="pure-table pure-table-horizontal">
+		    <thead>
+		        <tr>
+		            <th>巻数</th>
+		            <th>タイトル</th>
+		            <th>&nbsp;</th>
+		        </tr>
+		    </thead>
+
+		    <tbody>
+		    	{% for i in result.mangas %}
+		        <tr>
+		            <td>{{i.num}}</td>
+		            <td>{{i.name}}</td>
+		            <td><a href="/edit/{{i.id}}"><button class="pure-button pure-button-small">編集</button></a></td>
+		        </tr>
+		        {% endfor %}
+		    </tbody>
+		</table>
+	</div>
+
+	{% if result.pagination.has_next or result.pagination.has_prev %}
+	<div class="pager">
+		{% if result.pagination.has_prev %}
+		<a href="/{{result.pagination.page - 1}}"><button class="pure-button pure-button-small">&lt; 前のページ</button></a>
+		{% endif %}
+		{% if result.pagination.has_next %}
+		<a href="/{{result.pagination.page + 1}}"><button class="pure-button pure-button-small">次のページ &gt;</button></a>
+		{% endif %}
+	</div>
+	{% endif %}
+
+{% include "inc/footer" %}

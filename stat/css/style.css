@@ -1,0 +1,33 @@
+body {
+	font-size: 0.9em;
+	min-width: 300px;
+}
+
+.header {
+	background-color: #333;
+}
+
+.header h1 {
+	margin: 0;
+	padding: 15px;
+	font-size: 1.2em;
+	font-weight: normal;
+	color: #FFF;
+}
+
+.menu {
+	margin: 20px;
+}
+
+.box {
+	margin: 20px;
+}
+
+.pure-button-small {
+	font-size: 0.8em;
+}
+
+
+.pager {
+	margin: 20px;
+}

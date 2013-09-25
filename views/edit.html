@@ -1,0 +1,43 @@
+{% include "inc/header" %}
+
+	<div class="box">
+		<form class="pure-form" method="post" action="/done">
+		<table class="pure-table pure-table-bordered">
+
+		    <tbody>
+		    	<tr>
+		            <td>巻数</td>
+		            <td><input type="text" placeholder="" name="num" class="pure-input-1-4" value="{{i.num}}"> 巻</td>
+		        </tr>
+		        <tr>
+		            <td>タイトル</td>
+		            <td><input type="text" placeholder="" name="name" value="{{i.name}}"></td>
+		        </tr>
+		        <tr>
+		            <td>タイトルかな</td>
+		            <td><input type="text" placeholder="" name="kana" value="{{i.kana}}"></td>
+		        </tr>
+		        <tr>
+		            <td>&nbsp;</td>
+		            <td>
+				        <label for="cb" class="pure-checkbox">
+			                <input id="cb" type="checkbox" name="del"> 削除する
+			            </label>
+		        	</td>
+		        </tr>
+		  		<tr>
+		  			<td colspan="2" align="center">
+		  				<input type="hidden" placeholder="" name="id" value="{{i.id}}">
+		  				<button type="submit" class="pure-button pure-button-primary">変更する</button>
+		  			</td>
+		  		</tr>
+		    </tbody>
+		</table>
+	</form>
+	</div>
+
+	<div class="menu">
+		<a href="/"><button class="pure-button pure-button-small">一覧に戻る</button></a>
+	</div>
+
+{% include "inc/footer" %}

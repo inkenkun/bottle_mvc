@@ -1,0 +1,34 @@
+{% include "inc/header" %}
+
+	<div class="box">
+		<form class="pure-form" method="post" action="/done">
+		<table class="pure-table pure-table-bordered">
+
+		    <tbody>
+		    	<tr>
+		            <td>巻数</td>
+		            <td><input type="text" placeholder="" name="num" class="pure-input-1-4"> 巻</td>
+		        </tr>
+		        <tr>
+		            <td>タイトル</td>
+		            <td><input type="text" placeholder="" name="name"></td>
+		        </tr>
+		        <tr>
+		            <td>タイトルかな</td>
+		            <td><input type="text" placeholder="" name="kana"></td>
+		        </tr>
+		  		<tr>
+		  			<td colspan="2" align="center">
+		  				<button type="submit" class="pure-button pure-button-primary">登録する</button>
+		  			</td>
+		  		</tr>
+		    </tbody>
+		</table>
+	</form>
+	</div>
+
+	<div class="menu">
+		<a href="/"><button class="pure-button pure-button-small">一覧に戻る</button></a>
+	</div>
+
+{% include "inc/footer" %}
