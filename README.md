@@ -5,10 +5,6 @@ pythonのマイクロフレームワークbottleのMVCサンプルです
 
 マンガ何巻まで持ってたっけかな管理ツール
 
-techレポート用です。
-
-* http://amewiki.cadc.cyberagent.local/pages/viewpage.action?pageId=12684648
-
 ## Pythonバージョン
 
 macに最初から入ってる 2.7
