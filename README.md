@@ -43,3 +43,4 @@ gunicornで複数workerを立ち上げて、それをsupervisorでプロセス�
     * `index.py` ... dispatcher
 
 
+author inkenkun.
